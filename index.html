@@ -78,7 +78,7 @@
        RESET
     ================================================ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html  { scroll-behavior: smooth; }
+    html  { scroll-behavior: smooth; overflow-x: hidden; }
     body  {
       background: var(--bg);
       color: var(--text);
@@ -341,7 +341,7 @@
     .overlay {
       position: fixed;
       inset: 0;
-      z-index: 49;
+      z-index: 52;
       background: var(--bg);
       display: flex;
       flex-direction: column;
@@ -674,7 +674,7 @@
     /* ================================================
        FOOD GALLERY
     ================================================ */
-    .gallery { padding: 5rem 0 7rem; }
+    .gallery { padding: 5rem 0 7rem; overflow-x: hidden; }
     .gallery__hd {
       display: flex;
       align-items: baseline;
