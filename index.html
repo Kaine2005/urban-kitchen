@@ -643,6 +643,13 @@
     }
     .about__img--tall  { padding-bottom: 130%; }
     .about__img--sq    { padding-bottom: 100%; }
+    .about__img img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     /* ================================================
        STATEMENT
@@ -1238,9 +1245,15 @@
         </div>
 
         <div class="about__visual about__mosaic">
-          <div class="about__img about__img--wide ir" aria-label="Restaurant interior photo"></div>
-          <div class="about__img about__img--tall ir" aria-label="Food photo"></div>
-          <div class="about__img about__img--sq ir" aria-label="Atmosphere photo"></div>
+          <div class="about__img about__img--wide ir" aria-label="Sharing platter at Urban Kitchen">
+            <img src="sharingplatter2.jpg" alt="Sharing platter at Urban Kitchen">
+          </div>
+          <div class="about__img about__img--tall ir" aria-label="Smash burger">
+            <img src="bacon burger.jpg" alt="Smash burger at Urban Kitchen">
+          </div>
+          <div class="about__img about__img--sq ir" aria-label="Highlander loaded fries">
+            <img src="highlander loaded fries.jpg" alt="Loaded fries at Urban Kitchen">
+          </div>
         </div>
 
       </div>
@@ -1277,32 +1290,44 @@
 
     <div class="gallery__track" id="gallery-track" role="list">
       <div class="gallery__item" role="listitem">
-        <div class="gallery__img" aria-label="The Urban burger photo"></div>
+        <div class="gallery__img" aria-label="The Urban smash burger">
+          <img src="bacon burger.jpg" alt="The Urban smash burger">
+        </div>
         <p class="gallery__name">The Urban</p>
         <p class="gallery__cat">Burger</p>
       </div>
       <div class="gallery__item" role="listitem">
-        <div class="gallery__img" aria-label="Bacon and cheese burger photo"></div>
+        <div class="gallery__img" aria-label="Breakfast burger">
+          <img src="breakfast burger.jpg" alt="Breakfast burger at Urban Kitchen">
+        </div>
         <p class="gallery__name">Bacon &amp; Cheese</p>
         <p class="gallery__cat">Burger</p>
       </div>
       <div class="gallery__item" role="listitem">
-        <div class="gallery__img" aria-label="Fried chicken photo"></div>
+        <div class="gallery__img" aria-label="Pulled chicken burger">
+          <img src="PULLED CHICKEN BURGER.jpg" alt="Pulled chicken burger">
+        </div>
         <p class="gallery__name">Crispy Chicken</p>
         <p class="gallery__cat">Chicken</p>
       </div>
       <div class="gallery__item" role="listitem">
-        <div class="gallery__img" aria-label="Loaded fries photo"></div>
+        <div class="gallery__img" aria-label="Highlander loaded fries">
+          <img src="highlander loaded fries.jpg" alt="Highlander loaded fries">
+        </div>
         <p class="gallery__name">Loaded Fries</p>
         <p class="gallery__cat">Sides</p>
       </div>
       <div class="gallery__item" role="listitem">
-        <div class="gallery__img" aria-label="Sharing platter photo"></div>
+        <div class="gallery__img" aria-label="Sharing platter">
+          <img src="sharing platteer.jpg" alt="Sharing platter at Urban Kitchen">
+        </div>
         <p class="gallery__name">Sharing Platter</p>
         <p class="gallery__cat">Sides</p>
       </div>
       <div class="gallery__item" role="listitem">
-        <div class="gallery__img" aria-label="Dessert photo"></div>
+        <div class="gallery__img" aria-label="Oreo Easter egg pudding dessert">
+          <img src="oreo easter egg pudding.jpg" alt="Oreo Easter egg pudding">
+        </div>
         <p class="gallery__name">Cookie Skillet</p>
         <p class="gallery__cat">Desserts</p>
       </div>
@@ -1460,7 +1485,9 @@
     <div class="container">
       <div class="garden__inner">
 
-        <div class="garden__photo ir" aria-label="Beer garden photo"></div>
+        <div class="garden__photo ir" aria-label="Drinks in the beer garden">
+          <img src="outsdide drink.jpg" alt="Drinks outside at Urban Kitchen beer garden">
+        </div>
 
         <div class="garden__text">
           <span class="eyebrow fu">The Garden</span>
