@@ -1029,27 +1029,28 @@
       .footer__bottom { flex-direction: row; justify-content: space-between; }
     }
     .footer__legal {
-      font-size: .58rem;
+      font-size: .62rem;
       letter-spacing: .08em;
-      color: var(--text-muted);
-      opacity: .45;
+      color: var(--text-mid);
+      opacity: .8;
     }
     .footer__credit {
-      font-size: .62rem;
+      font-size: .68rem;
       letter-spacing: .1em;
-      color: var(--text-muted);
-      opacity: .6;
+      color: var(--text-mid);
+      opacity: 1;
     }
     .footer__credit a {
+      color: var(--gold);
       text-decoration: underline;
-      text-decoration-color: transparent;
+      text-decoration-color: rgba(200,169,110,.35);
       text-underline-offset: 3px;
       transition: color .25s, text-decoration-color .25s, opacity .25s;
     }
     .footer__credit:hover { opacity: 1; }
     .footer__credit a:hover {
       color: var(--gold);
-      text-decoration-color: rgba(200,169,110,.35);
+      text-decoration-color: rgba(200,169,110,.7);
     }
 
     /* ================================================
