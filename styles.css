@@ -3,9 +3,9 @@
        TOKENS
     ================================================ */
     :root {
-      --bg:          #081409;
-      --bg-raise:    #0C1D0E;
-      --bg-card:     #122A15;
+      --bg:          #060D08;
+      --bg-raise:    #0A130C;
+      --bg-card:     #0E1A11;
       --gold:        #C8A96E;
       --gold-dim:    rgba(200,169,110,0.08);
       --gold-border: rgba(200,169,110,0.16);
@@ -206,7 +206,7 @@
       border-bottom: 1px solid transparent;
     }
     .nav.scrolled {
-      background: rgba(8,20,9,.90);
+      background: rgba(6,13,8,.90);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       padding-top: 1rem;
@@ -346,8 +346,8 @@
       inset: 0;
       will-change: transform;
       background:
-        radial-gradient(ellipse 90% 65% at 60% 30%, rgba(12,29,14,.78) 0%, transparent 65%),
-        radial-gradient(ellipse 110% 90% at 20% 80%, rgba(8,20,9,.85) 0%, transparent 55%),
+        radial-gradient(ellipse 90% 65% at 60% 30%, rgba(10,19,12,.78) 0%, transparent 65%),
+        radial-gradient(ellipse 110% 90% at 20% 80%, rgba(6,13,8,.85) 0%, transparent 55%),
         url('building exterior.png') center/cover no-repeat;
     }
     /* Bottom + left gradient overlay — pulls hero into page */
@@ -355,7 +355,7 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(to top,  var(--bg) 0%, rgba(8,20,9,.3) 38%, transparent 65%),
+        linear-gradient(to top,  var(--bg) 0%, rgba(6,13,8,.3) 38%, transparent 65%),
         linear-gradient(to right, var(--bg) 0%, transparent 55%);
       z-index: 1;
     }
@@ -1112,7 +1112,7 @@
       inset: 0;
       z-index: 1;
       background:
-        linear-gradient(to bottom, rgba(8,20,9,.6) 0%, var(--bg) 92%),
+        linear-gradient(to bottom, rgba(6,13,8,.6) 0%, var(--bg) 92%),
         linear-gradient(to right, var(--bg) 0%, transparent 60%);
     }
     .page-hero__inner { position: relative; z-index: 2; }
