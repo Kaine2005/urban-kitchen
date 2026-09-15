@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="The Urban Kitchen menu — smash burgers, crispy fried chicken, loaded fries, desserts and drinks. Arbroath.">
+  <meta name="theme-color" content="#081409">
+  <title>Menu — Urban Kitchen, Arbroath</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled" id="site-nav" aria-label="Site navigation">
+    <a href="index.html" class="nav__logo">Urban <em>Kitchen</em></a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="is-active">Menu</a></li>
+      <li><a href="story.html">Our Story</a></li>
+    </ul>
+    <div class="nav__right">
+      <a href="https://api.leadconnectorhq.com/widget/booking/ij1mbfDBCn9wXz13ZR1b" target="_blank" rel="noopener noreferrer" class="nav__book">Reserve a Table</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-overlay">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+    <button class="overlay__close" id="overlay-close" aria-label="Close menu">&#x2715;</button>
+    <a href="index.html" data-close>Home</a>
+    <a href="menu.html"  data-close>Menu</a>
+    <a href="story.html" data-close>Our Story</a>
+    <a href="https://api.leadconnectorhq.com/widget/booking/ij1mbfDBCn9wXz13ZR1b" target="_blank" rel="noopener noreferrer" data-close class="overlay__cta">Reserve a Table</a>
+  </div>
+
+
+  <!-- PAGE HERO -->
+  <header class="page-hero grain" aria-labelledby="menu-h1">
+    <div class="page-hero__bg" style="background-image:url('bacon burger.jpg')" aria-hidden="true"></div>
+    <div class="container page-hero__inner">
+      <span class="eyebrow fu">The Menu</span>
+      <h1 class="page-hero__title" id="menu-h1">
+        Everything<br><em>made fresh.</em>
+      </h1>
+      <p class="page-hero__sub fu">
+        5% mince, real ingredients, nothing frozen. Every burger comes with a
+        cast-iron skillet of chips. Menu and prices are being finalised ahead of
+        opening — check back soon.
+      </p>
+    </div>
+  </header>
+
+
+  <!-- MENU -->
+  <section class="menu-wrap" id="menu" aria-label="Full menu">
+    <div class="container">
+
+      <div class="menu__tabs" role="tablist" aria-label="Filter menu by category">
+        <button class="menu__tab active" role="tab" aria-selected="true"  data-filter="all">All</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-filter="burgers">Burgers</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-filter="chicken">Chicken</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-filter="sides">Sides</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-filter="desserts">Desserts</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-filter="drinks">Drinks</button>
+      </div>
+
+      <div class="menu__body">
+
+        <!-- BURGERS -->
+        <div class="menu-cat" data-section="burgers">
+          <p class="menu-cat__label">Burgers</p>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <p class="menu-item__name">The Urban</p>
+              <p class="menu-item__desc">Double smashed patties, American cheese, house sauce, brioche bun. The one this place was built around.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Bacon &amp; Cheese</p>
+              <p class="menu-item__desc">Smoked streaky bacon, smoked cheddar, caramelised onion, burger sauce.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">The Dirty One</p>
+              <p class="menu-item__desc">Triple smash, jalape&ntilde;os, hot sauce, pickles, cheese sauce. Not for the faint-hearted.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Halloumi Stack <span class="badge">V</span></p>
+              <p class="menu-item__desc">Grilled halloumi, roasted pepper, baby gem, harissa mayo.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CHICKEN -->
+        <div class="menu-cat" data-section="chicken">
+          <p class="menu-cat__label">Chicken</p>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <p class="menu-item__name">Crispy Fried Chicken</p>
+              <p class="menu-item__desc">Properly seasoned, crispy fried. Pickled slaw and house hot sauce.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Nashville Hot</p>
+              <p class="menu-item__desc">Crispy fried chicken, Nashville spice blend, white bread, pickles.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Honey Garlic Tenders</p>
+              <p class="menu-item__desc">Crispy chicken strips, honey garlic butter glaze.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SIDES -->
+        <div class="menu-cat" data-section="sides">
+          <p class="menu-cat__label">Sides</p>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <p class="menu-item__name">Loaded Fries</p>
+              <p class="menu-item__desc">House cheese sauce, crispy bacon, spring onion.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Halloumi Fries</p>
+              <p class="menu-item__desc">Golden fried halloumi, sweet chilli dip.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Mac &amp; Cheese Bites</p>
+              <p class="menu-item__desc">Deep-fried mac and cheese croquettes.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Onion Rings</p>
+              <p class="menu-item__desc">Thick-cut, crispy battered, golden-fried.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">House Coleslaw <span class="badge">V</span></p>
+              <p class="menu-item__desc">Made in-house, dressed properly.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="menu-cat" data-section="desserts">
+          <p class="menu-cat__label">Desserts</p>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <p class="menu-item__name">Cookie Skillet</p>
+              <p class="menu-item__desc">Warm cookie dough, vanilla ice cream, chocolate sauce. Arrives in a cast-iron skillet.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Build Your Own Sundae</p>
+              <p class="menu-item__desc">Your server will walk you through it. No wrong answers.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="menu-cat" data-section="drinks">
+          <p class="menu-cat__label">Drinks</p>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <p class="menu-item__name">Cocktails</p>
+              <p class="menu-item__desc">House-made. Ask your server what's on tonight.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Craft Beer</p>
+              <p class="menu-item__desc">Bottled and canned. Tap coming soon.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Milkshakes</p>
+              <p class="menu-item__desc">Made to order, properly thick. Ask for today's flavours.</p>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__name">Soft Drinks &amp; Mocktails</p>
+              <p class="menu-item__desc">No judgement.</p>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /menu__body -->
+    </div>
+  </section>
+
+
+  <!-- MAP — find us -->
+  <section class="map-section" aria-labelledby="map-h2">
+    <div class="container">
+      <div class="map-section__hd">
+        <span class="eyebrow fu">Find Us</span>
+        <h2 class="map-section__title fu" id="map-h2">In the heart of Arbroath.</h2>
+        <p class="map-section__addr fu">Lochlands Street &middot; Arbroath &middot; DD11 3AB</p>
+      </div>
+    </div>
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d270.77246040102426!2d-2.592514454040953!3d56.55994245155398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48868d01b06138b3%3A0x913e512401b56e93!2sUrban%20Kitchen%20Co.!5e0!3m2!1sen!2suk!4v1789481723830!5m2!1sen!2suk"
+        title="Urban Kitchen location on Google Maps"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Urban Kitchen</p>
+          <p class="footer__brand-tag">Restaurant &middot; Bar &middot; Beer Garden</p>
+        </div>
+        <div>
+          <p class="footer__col-head">Find Us</p>
+          <address class="footer__address">
+            Lochlands Street<br>
+            Arbroath<br>
+            DD11 3AB
+          </address>
+          <a href="https://maps.app.goo.gl/YBmHEdn59qhEpRiz7" target="_blank" rel="noopener noreferrer" class="footer__directions">
+            Get Directions
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+              <path d="M1 9L9 1M9 1H3M9 1V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <p class="footer__col-head">Contact</p>
+          <div class="footer__contact">
+            <p><a href="tel:TBC">Phone: TBC</a></p>
+            <p><a href="mailto:TBC">Email: TBC</a></p>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-head">Follow</p>
+          <nav class="footer__socials" aria-label="Social media">
+            <a href="https://www.instagram.com/urban.kitchen.arbroath/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/p/Urban-Kitchen-61561633822384/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.tiktok.com/@the.tattooed.baker" target="_blank" rel="noopener noreferrer">TikTok</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__legal">&copy; 2025 Urban Kitchen. All rights reserved.</p>
+        <p class="footer__credit"><a href="https://copybykaine.com" target="_blank" rel="noopener noreferrer">Website by CopyByKaine</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
